@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ArchiAll - Comparte tus archivos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts for modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>ArchiAll</h2>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Subir Archivo</a>
+                <a href="#">Archivos</a>
+                <a href="#">Acerca de</a>
+            </nav>
+        </aside>
+        <main class="main">
+            <h1>Comparte tus archivos fácilmente</h1>
+            <p>
+                Sube cualquier archivo y compártelo con quien quieras. ¡Olvídate del pendrive!
+            </p>
+            <form class="upload-box" id="uploadForm">
+                <label for="fileInput">Selecciona un archivo para subir:</label>
+                <input type="file" id="fileInput" name="file" required>
+                <button type="submit">Subir archivo</button>
+            </form>
+            <section class="file-list" id="fileListSection" style="display:none;">
+                <h3>Archivos disponibles</h3>
+                <ul id="fileList">
+                    <!-- Aquí se mostrarán los archivos subidos -->
+                </ul>
+            </section>
+        </main>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
